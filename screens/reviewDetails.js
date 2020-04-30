@@ -12,8 +12,9 @@ export default function ReviewDetails({ navigation }) {
 
     return (
         <View style={globalStyles.container}>
-            <Text>Review Details Screen</Text>
-            <Button title='back to home' onPress={pressHandler}/>
+            <Text>{ navigation.getParam('title') }</Text>
+            <Text>{ navigation.getParam('body') }</Text>
+            <Text>RATING: { navigation.getParam('rating') }</Text>
         </View>
     )
 }
